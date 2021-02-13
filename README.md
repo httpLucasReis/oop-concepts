@@ -175,7 +175,7 @@ class Car {
 ```
 
 - I will explain about public, private, and protected attributes another day. They also are really important concepts.
-- (Read about Babel)[https://babeljs.io/]
+- [Read about Babel](http://github.com)
 
 ## Inheritance
 
