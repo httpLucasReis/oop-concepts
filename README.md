@@ -139,7 +139,7 @@ $objectInstance->method();
 - The object's state is only touched by its own methods.
 
 ```jsx
-// Any cases you need use babel-presets.
+// In any cases you need to use babel-presets.
 
 class Car {
 	factory;
@@ -175,6 +175,7 @@ class Car {
 ```
 
 - I will explain about public, private, and protected attributes another day. They also are really important concepts.
+- (Read about Babel)[https://babeljs.io/]
 
 ## Inheritance
 
