@@ -175,7 +175,8 @@ class Car {
 ```
 
 - I will explain about public, private, and protected attributes another day. They also are really important concepts.
-- [Read about Babel](http://github.com)
+- If you want to use babel, i writed a simple tutorial about "How to install babel-present-env". [Read here](https://github.com/httpLucasReis/babel-js/blob/master/README.md)
+- [Read more about @babel-preset-env](https://babeljs.io/docs/en/babel-preset-env)
 
 ## Inheritance
 
