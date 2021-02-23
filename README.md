@@ -267,3 +267,34 @@ class Knight extends Player {
 }
 
 ```
+## Visibility
+
+- I will tell a simple analogy about Visibility, it's not mine, but I think it interesting.
+
+    Your father orders a pizza. The delivery guy arrives and expects payment. The wallet containing the money belongs to the object **father.**
+
+    If the wallet is ***private***, then you have to get your father to open it and pay.
+
+    If the wallet is ***protected***, you can get the wallet and pay the pizza guy.
+
+    If the wallet is ***public***, the pizza guy takes the wallet and pays himself.
+    ****
+
+### Public
+<img height="300" src="https://user-images.githubusercontent.com/62820717/108793874-54cf0e80-7563-11eb-9b55-793a2e59f5e3.png"/>
+
+### Private
+<img height="300" src="https://user-images.githubusercontent.com/62820717/108793943-85af4380-7563-11eb-9887-94b344d8ad83.png"/>
+
+### Protected
+<img height="300" src="https://user-images.githubusercontent.com/62820717/108793977-a4add580-7563-11eb-9d5a-dcd8112269e2.png"/>
+
+- Therefore, When you use a public attribute, it is available to everyone that can access the class instance.
+- When you use a private attribute, it is only accessible within the class that instantiated the object.
+- When you use a protected attribute, it is only accessible to the class that instantiated the object and objects inherited by it.
+
+## Why Visibility Matters?
+
+- It helps us show the intent of our code
+- It reduces our need to validate properties when used internally
+- And it helps dictate how classes should be used
