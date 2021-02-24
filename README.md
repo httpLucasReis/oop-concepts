@@ -298,3 +298,82 @@ class Knight extends Player {
 - It helps us show the intent of our code
 - It reduces our need to validate properties when used internally
 - And it helps dictate how classes should be used
+
+## Static attributes and methods in OOP
+
+- Static methods and attributes are helpful as they do not rely on an instantiated member of whatever class are attached to.
+- Static variables and methods belong to a class and are called with the Class Name rather than using object variables, like ClassName.methodName().
+- There is only one copy of static variable or method for the whole class. For example,  the main method is static because there should only be 1 main method.
+- Static methods can be public or private.
+- the static keyword is placed right after the public/private modifier and right before the type of variables and methods in their declarations.
+
+```java
+class ClassName {
+  // static variable
+  public static type variableName;
+
+  // static method
+  public static returnType methodName(parameters) {
+	   // something
+  }
+}
+
+```
+
+## Examples with Java
+
+## No static methods
+
+### Class Math
+
+```java
+public class Math {
+	public int sum(int x, int y) {
+		return x + y;
+	}
+}
+```
+
+### Class Main
+
+```java
+public class Main {
+
+	public static void main(String[] args) {
+		int result = (new Math()).sum(5, 5);
+		
+		System.out.println("Result: " + result);
+		// console: 10
+	}
+
+}
+```
+
+## With Static methods
+
+### Class Math
+
+```java
+public class Math {
+	public static int sum(int x, int y) {
+		return x + y;
+	}
+}
+```
+
+### Class Main
+
+```java
+public class Main {
+
+	public static void main(String[] args) {
+		int result = Math.sum(10, 10);
+		
+		System.out.println("Result: " + result);
+		// console: 20
+	}
+
+}
+```
+
+- Static methods help you to logging, debugging, testing and similar things, but you need be careful, if you just have a bunch of static methods instead of real classes, you will be forced to write the procedural programming.
