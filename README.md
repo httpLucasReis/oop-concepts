@@ -267,6 +267,42 @@ class Knight extends Player {
 }
 
 ```
+## Understand constructors
+
+- A constructor is a special method of a class or structure in object-oriented programming that initializes a newly created object of that type. Whenever an object is created, the constructor is called automatically.
+- A constructor has the same name as the class.
+- It can be used to set the values of the members of an object.
+
+    ```jsx
+    class  Player {
+    	constructor(_color, _age, _name){
+    		this.color = _color
+    		this.age = _age
+    		this.name = _name
+    	}
+    }
+
+    ```
+
+    ### Constructor design
+
+    - Logic involving specific operations that need to be executed at a particular event in an application - such as opening a database connection - should not be written in a constructor.
+    - When using derived class constructors, the parent class constructor should be passed the correct parameters
+    - Better code maintainability comes from having the initialization and other related logic in one main constructor and cross-calling this constructor from other overloaded constructors.
+
+    ## If it is a constructor...
+
+    - It has same name as class name
+    - It has called whenever object of a class is created
+    - It does not have return type not even void
+    - it can have parameters
+    - Constructor can be overloaded
+    - Default constructor is automatically created when compiler does not find any constructor in a class
+    - Parameterized constructor can call default constructor using this.() method.
+    - A constructor can be static for static data field initialization
+    - It is not implicitly inherited.
+
+
 ## Visibility
 
 - I will tell a simple analogy about Visibility, it's not mine, but I think it interesting.
